@@ -22,7 +22,6 @@ from tensorflow.keras.layers import Dropout
 from tensorflow.saved_model import load
 try:
     import tensorflow_addons as tfa
-    print('tensorflow addons imported')
 except:
     pass
 # from keras.models import Sequential
@@ -144,8 +143,7 @@ class MyModel(Sequential):
                 self.add(Dropout(layer_config['rate']))
         
         self.compile_me(optimizer)
-        print('input_size', input_size)
-        print('output_size', output_size)
+
 
         self.evaluate_me(np.zeros((1,input_size)), np.zeros((1,output_size)),
                          batch_size=64)
