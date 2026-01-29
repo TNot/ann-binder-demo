@@ -1,0 +1,14 @@
+name: tf29
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9.23
+  - pip
+  - pip:
+      - tensorflow==2.13.1
+      - tensorflow-addons==0.21.0
+      - numpy
+      - matplotlib
+      - ipywidgets
+      - ipympl
+      - voila
