@@ -13,3 +13,4 @@ dependencies:
       - ipympl
       - voila
       - scipy
+      - plotly
